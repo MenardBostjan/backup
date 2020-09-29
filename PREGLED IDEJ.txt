@@ -1,0 +1,61 @@
+ugani stevilko:
+
+OK-- izbira: enomestno, dvomestno
+OK-- izbira mest: doloci/izberi kolikomestno
+OK-- doloci postopek izbire nakljucne stevilke 
+
+Opomnik za ugibanje...android
+
+OK-- doloci/izberi stevilo ugibanj, 
+OK-- shrani vsa ugibanja za kasnejsi pregled...
+
+omogoci statistiko po dnevih, urah, minutah, 
+OK-- samodejno hranjenje trenutnega datuma,
+konec ugibanja, cas trajanja,  pregled skupne rabe v dnevu ....
+
+omogoci prikaz ugibanj iz preteklosti (najboljsih, najslabsih..)
+
+omogoci vnos/pregled po pocutjih v dnevu --- vnos obcutka in vzrok
+(dober dan, slab dan, vmesni dan, izredno slabo pocutje...)
+
+omogoci vnos/pregled posebnih dogodkov v dnevu, tednu, mesecu - povezanih z ugibanji...
+
+Vnos trenutnega fizicnega stanja in vzrok za trenutno stanje ...stopnja zbranosti, 
+koncentracije, odsotnosti....
+
+class Ugibanje
+	private: 
+		int stevilo_ugibanj
+		t_time datum
+
+0....1....2....3.....4
+  25   25   25   25
+ne20   20   20   20 
+
+Zapis v datoteko:
+
+----------------------------------------------------------------------------------------
+
+========================================================================================
+Ime: 	Jan
+Datum:	01.05.2019
+Serija:	7/10
+Izbira: po (ne pred)
+----------------------------------------------------------------------------------------
+Zap.st	PrUpor.	Prog. 	PoUpor.	Prav?	%pomote
+========================================================================================
+1	-	5	3	-	 20     5-3= 2/10*100=20
+2	-	6	4	-	 20
+3	-	6	6	+	 0
+4	-	2	3	-	-10
+5	-	7	7	+	 0
+6	-	8	8	+	 0	
+7	-	9	3	-	 60
+---------------------------------------------------------------------------------------
+Pravilnih 5 od 10 -> 50%
+=======================================================================================
+
+R U P (izracun procenta pomote)
+7-3 = 4/10*100 = 40%
+5-3 = 2/10*100 = 20%
+0-1 = 1/4*100 =  25%
